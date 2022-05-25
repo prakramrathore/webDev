@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <Style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900'); 
+            content: "";
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .section {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            /* border: red 2px solid; */
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            /* margin: 3px; */
+
+        }
+
+        header section h1 {
+            /* background-color: red; */
+            font-size: 4rem;
+        }
+
+        section::after{
+            content: "This is a content";
+        }
+        section::before{
+            content: "This is a content";
+        }
+    </Style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="item" id="item1"><a href="#">Home</a></li>
+                <li class="item" id="item2"><a href="#">About</a></li>
+                <li class="item" id="item3"><a href="#">Services</a></li>
+                <li class="item" id="item4"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="section">
+            <h1>This is a Section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam, eos qui unde ex praesentium! Ab
+                suscipit amet, molestiae maxime sequi consectetur magnam eaque minus deleniti nihil, ad harum cum!
+                Cumque corrupti voluptatum laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                cum alias ipsum? Expedita sapiente aliquam nulla nam assumenda commodi vel ea? Tenetur a voluptatem
+                adipisci ipsa dolorum, accusamus dolores saepe itaque nihil inventore, tempora in magni eos laboriosam
+                minus, quod quisquam nobis repellendus delectus placeat necessitatibus unde cupiditate dicta! Sint enim
+                a voluptas corrupti modi quos, blanditiis earum nostrum nisi accusamus maxime tempore, rerum ex vero
+                sapiente facere odio nam doloribus repudiandae debitis illum recusandae exercitationem. Odit itaque
+                dolor voluptas consequatur accusamus! Quis tempore ullam corrupti ad voluptatum blanditiis veritatis
+                voluptatem facere obcaecati fugiat deserunt veniam numquam pariatur laborum, sint illo consequuntur
+                doloremque? Harum, illum. Architecto in veniam ut aspernatur officiis? Sequi cupiditate, quibusdam autem
+                saepe nisi iusto eius velit officia officiis amet, error unde architecto sit corrupti harum. Maxime
+                minus, animi maiores inventore, harum provident accusantium quos dicta, placeat error voluptatibus quasi
+                esse cum.</p>
+        </section>
+    </header>
+</body>
+
+</html>

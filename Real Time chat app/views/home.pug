@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts 
+    script(defer src="http://localhost:8000/socket.io/socket.io.js") 
+    script(defer src='client.js')
+
+block style 
+    style 
+        include ../static/style.css
+block content 
+    nav
+        img.logo(src="logo.png", alt="Error")
+    div.container 
+    div.send 
+        form#send-container(action="#") 
+            input#messageInp(type="text", name="messageInp")
+            button.btn
+                | Send 

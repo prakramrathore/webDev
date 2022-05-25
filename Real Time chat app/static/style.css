@@ -1,0 +1,100 @@
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  .logo:hover {
+    /* position: absolute;
+      top:40vh;
+      left: 80vh; */
+    transition: all;
+    margin-top: 80px;
+    transform: scale(3);
+  }
+  body {
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container {
+    max-width: 955px;
+    margin: auto;
+    height: 60vh;
+    background-color: #faaca8;
+    background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+    overflow-y: auto;
+  }
+  .message {
+    background-color: gray;
+    max-width: 400px;
+    border: gray 2px solid;
+    border-radius: 10px;
+    margin: 13px 4px;
+  }
+  .right:hover {
+    /* transition: all; */
+    transform: rotateY(45deg) scale(1.2);
+    box-shadow: 5px 5px 5px darkmagenta;
+  }
+  .left:hover {
+    overflow:visible;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px darkmagenta;
+  }
+  .left {
+    float: left;
+    clear: both;
+  }
+  .right {
+    float: right;
+    clear: both;
+  }
+  #send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  #messageInp {
+    width: 896px;
+    font-size: 20px;
+    margin-top: 6px;
+    background: none;
+    border: 2px solid darkmagenta;
+    box-shadow: 2px 2px 2px rgb(103, 2, 103);
+    border-radius: 10px;
+    outline: none;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  }
+  #messageInp:hover {
+    transform: scale(1.01);
+  }
+  ::placeholder {
+    color: rgb(68, 61, 61);
+  }
+  .btn {
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border: 2px solid darkmagenta;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(103, 2, 103);
+    color: white;
+    background-color: #85ffbd;
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  }
+  .btn:hover {
+    background: white;
+    color: black;
+    transform: rotateY(45deg) rotateX(10deg) rotateZ(5deg);
+    overflow: hidden;
+  }
+  

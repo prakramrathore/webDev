@@ -1,0 +1,1 @@
+console.log('This is in index.js which in turn inside static')

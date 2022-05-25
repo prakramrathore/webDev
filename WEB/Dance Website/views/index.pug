@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    title RR Dance Academy
+    style
+      include ..\static\style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="/static/logo.jpg", alt="Error")
+                h3 #[a(href = '/') RDA]
+            li #[a(href = '/') Home ]
+            li #[a(href = '/') About]
+            li #[a(href = '/') Services]
+            li #[a(href = '/') Class Info]
+            li #[a(href = '/') Contact]
+
+    section#intoSection 
+        div Welcome To RR's Dance Academy 
+        div#small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Missions
+        div.card-container
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/1.png", alt="error")
+                    div.card-content
+                        p This is the best dance academy
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/2.png", alt="error")
+                    div.card-content
+                        p This is the best dance academy
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/3.jpg", alt="error")
+                    div.card-content
+                        p This is the best dance academy
+
+    section#sponserSection 
+        h2 Our Sponsers
+        div#sponsers
+            img(src="/static/apple.png", alt="sponsers img" Class = "spimg")
+            img(src="/static/microsoft.png", alt="sponsers img" Class = "spimg")
+            img(src="/static/skype.jpg", alt="sponsers img" Class = "spimg")
+            img(src="/static/hp.png", alt="sponsers img" Class = "spimg")
+
+    footer#footer 
+        |Copywrite 2019 © rrdanceacademy.com | All right reserved
+    
+    script
+      include ..\static\index.js

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Palette+Mosaic&family=Style+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+#navbar{
+    background-color:#c24747;
+    padding: 13px 14px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0px 12px;
+}
+
+#logo img{
+    height: 42px;
+
+}
+
+#logo h3{
+    margin-left:10px;
+}
+
+#logo h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul{    
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+#navbar li{    
+    list-style: none;
+}
+
+#navbar li a{    
+    color: white;
+    text-decoration: none;
+    padding: 18px 20px;
+    font-size: 30px;
+}
+
+#navbar li a:hover{    
+    color: black;
+}
+
+#intoSection {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    height: 425px;
+    color: white;
+    background: center / cover no-repeat url("/static/bg.jpg") ;
+}
+
+#intoSection div#small{
+    font-size: 52px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+#missionSection {
+    height: 330px;
+    background-color: white;
+    font-family: 'Style Script', cursive;
+}
+
+#missionSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Style Script', cursive;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px 25px;
+    height: 200px;
+    display: inline-block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    height: 125px;
+    padding: 0px 12px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+#sponserSection {
+    height: 300px;
+    background-color: yellow;
+    font-family: 'Style Script', cursive;
+}
+
+#sponserSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Style Script', cursive;
+}
+
+#sponsers{
+    height: 180px;
+    max-width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.spimg{
+    height: 80%;
+    margin: 40%;
+}
+
+#footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

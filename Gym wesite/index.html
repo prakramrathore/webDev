@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Fitness Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: silver;
+            margin: 0px;
+            padding: 0px;
+            background-size: cover;
+            background-image: url('people-2604149.jpg');
+            background-repeat: no-repeat;
+            font-family: 'Baloo Bhaina 2', cursive;
+
+
+        }
+
+        .left {
+            position: absolute;
+            left: 20px;
+            top: 18px;
+        }
+
+        .left img {
+            width: 70px;
+        }
+
+        .left div {
+            float: right;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        .mid {
+            width: 50%;
+            margin: 30px auto;
+            background-color: rgb(221, 155, 155);
+            border-radius: 10px;
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 35px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: snow;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            padding: 4px 15px 0px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            background-color: rgb(177, 206, 147);
+            cursor: pointer;
+            font-size: 10px;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: gray;
+            background-color: chartreuse;
+        }
+
+        .container {
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 64px 20px;
+            padding: 2px 2px;
+            border: 2px solid royalblue;
+            border-radius: 10px;
+            background-color: gray;
+            width: 340px;
+        }
+
+        .container h3 {
+            font-family: 'Baloo Bhaina 2', cursive;
+            color: rgb(51, 14, 14);
+            width: 65%;
+            margin: 14px 55px;
+        }
+
+        .form input {
+            margin: 2px 20px;
+            width: 140px;
+            padding: 2px 78px;
+            border-radius: 10px;
+            border: gray 2px solid;
+        }
+
+        .container button {
+            width: 89%;
+            margin: 16px 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gym-1048852.png" alt="Error">
+            <div>Royal Fitness Gym</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best gym of Jaipur</h3>
+        <hr>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="number" name="number" placeholder="Enter your Mobile No.">
+            </div>
+            <div class="form">
+                <input type="number" name="age" placeholder="Enter your age">
+            </div>
+            <div class="form">
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+            <hr>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Hello world</h1>
+    </div>
+</body>
+
+</html>

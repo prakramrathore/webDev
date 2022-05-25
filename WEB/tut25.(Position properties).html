@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky</title>
+    <style>
+        /* CSS position: static (default), absolute, relative, fixed and stickey */
+        .box {
+            border: red solid 2px;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box3 {
+            /* relative: positions relative to its normal position and will leave a gap at its normal position*/
+            /* position: relative; */
+
+            /* absolute: positions relative to its first parent position and leaves no gap*/
+            position: absolute;
+            top: 34px;
+            left: 34px;
+        }
+
+        #box2{
+
+            /* postion:fixed: positions it relative to browser window */
+            position: fixed;
+            right: 10px;
+        }
+        #box1{
+            /* sticky and fixed appear to be same but fixed position is fixed relative to web page and goes till its end and whereas sticky position is realtive to its container and will go till end to the container */
+            position: sticky;
+            top: 2px;
+        }
+        .container{
+            border: black 2px solid;
+            background-color: burlywood;
+            height: 3500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

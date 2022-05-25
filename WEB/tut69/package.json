@@ -1,0 +1,23 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "This is best package",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "rishi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
+// ^ in version means that it install exactly the same version, if we replace ^ with ~ and ^ with > then if we run npm then it will install all patches of that version in case of ~ and it will install latest version in case of >z
+// if we want to view the version==-== npmview slugify version
